@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>portfolio</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+</script>
+<meta name="keywords" content="Aptes Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--Google Fonts-->
+<link href='http://fonts.useso.com/css?family=Ropa+Sans:400,400italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrollinheg -->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+	
+});	
+</script>
+
+</head>
+<body>
+<!--strip start here-->
+<div class="mothergrid">
+	<div class="container">
+		<div class="strip"> 
+			<div class="logo">
+		      <a href="index.html"> <img src="images/logo.png" alt=""/></a>
+		    </div>
+			<div class="top-nav">
+				<span class="menu"> <img src="images/icon.png" alt=""/></span>
+			<ul class="res"> 
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="service.html">Services</a></li>
+				<li><a class="active" href="portfolio.html">Portfolio</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<!-- script-for-menu -->
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.res" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+			<!-- /script-for-menu -->
+		</div>
+	</div>
+<!--strip end here-->
+<!--header start here-->
+<div class="header">
+	<div class="social-icons">
+		<ul class="head-icons">
+			<li><a class="foot" href="#"> </a></li>
+		  	<li><a class="fa" href="#"> </a></li>
+		  	<li><a class="tw" href="#"> </a></li>
+		  	<li><a class="in" href="#"> </a></li>
+		</ul>
+	</div>
+	<div class="search">
+		<input type="text" value="Search Here..."/ onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}"/>
+		<input type="submit" value=""/>
+	</div>
+	<div class="clearfix"> 	</div>
+	<span class="bann-line"> </span>
+</div>
+<!--header end here-->
+<!--portfolio start here-->
+<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
+		
+<div class="portfolio">
+	<div class="portfolio-top">
+		<h3>Portfolio</h3>
+		<p> These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+	</div>
+	<div class="portfolio-bottom">
+	<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+						<li><span class="filter" data-filter="app">web design</span></li>
+						<li><span class="filter" data-filter="card">graphic design</span></li>
+						<li><span class="filter" data-filter="icon">photography</span></li>
+						<li><span class="filter" data-filter="logos">illustration</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/b-p1.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+						     <img src="images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/sea.png" alt=""></h2>
+						  		</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/b-p2.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+						     <img src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/sea.png" alt=""></h2>
+						  	 </div></a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/b-p3.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+						     <img src="images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/sea.png" alt=""></h2>
+						  	 </div></a>
+		                </div>
+					</div>				
+					<div class="portfolio logos mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/b-p4.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+						     <img src="images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/sea.png" alt=""></h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/b-p5.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+						     <img src="images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/sea.png" alt=""></h2>
+						  	 </div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/b-p6.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+						     <img src="images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/sea.png" alt=""></h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		  <div class="clearfix"> </div>
+
+  </div>
+<!--portfolio end here-->
+<!--copyright start here-->
+<div class="copy-right">
+	<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.mianfeimoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+</div>
+	</div>
+</div>
+<!--copyright end here-->
+</body>
+</html>
